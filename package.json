@@ -1,0 +1,20 @@
+{
+  "name": "taiwan-weather-map",
+  "version": "1.0.0",
+  "author": "Joseph Yu",
+  "description": "A beautiful and interactive Taiwan weather map",
+  "keywords": ["taiwan", "weather"],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JosephYu1118/taiwan-weather-map.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JosephYu1118/taiwan-weather-map/issues"
+  },
+  "homepage": "https://github.com/JosephYu1118/taiwan-weather-map#readme"
+}
