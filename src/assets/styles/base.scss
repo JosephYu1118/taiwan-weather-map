@@ -1,5 +1,6 @@
 @import './reset.scss';
 @import './fonts.scss';
+@import './transitions.scss';
 
 html, body, #app {
 	width: 100%;
@@ -11,9 +12,14 @@ html, body, #app {
 	touch-action: manipulation;
 }
 
+html, body {
+	background-color: $charcoal;
+}
+
 #app {
 	max-width: 450px;
-  background-color: grey;
+	background-color: $oxford-blue;
+	box-shadow: 5px 5px 10px rgba($black, 0.2);
 	position: relative;
 	overflow-y: scroll;
 }

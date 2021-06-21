@@ -4,9 +4,16 @@
 $black: #000;
 $white: #FFF;
 
+$oxford-blue: #001B2E;
+$charcoal: #294C60;
+$cadet-blue-crayola: #ADB6C4;
+$papaya-whip: #FFEFD3;
+$peach-crayola: #FFC49B;
+
 // --------------------
 //      Border
 // ----------------------------------------
+$light-border: $cadet-blue-crayola;
 
 // --------------------
 //      Background
@@ -15,6 +22,8 @@ $white: #FFF;
 // --------------------
 //      Text
 // ----------------------------------------
+$medium-text: $papaya-whip;
+$light-text: $cadet-blue-crayola;
 
 // ========================================
 //      Mixins

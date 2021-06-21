@@ -1,0 +1,36 @@
+// ========================================
+//      Keyframes
+// ================================================================================
+// --------------------
+//      Loading
+// ----------------------------------------
+@keyframes bounce-back-and-forth {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+// --------------------
+//      Toast
+// ----------------------------------------
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: translate3d(-50%, 300%, 0);
+  }
+  33% {
+    opacity: 1;
+  }
+  66% {
+    transform: translate3d(-50%, -75%, 0);
+  }
+  100% {
+    transform: translate3d(-50%, -50%, 0);
+  }
+}
