@@ -1,0 +1,24 @@
+.weather {
+  height: 100%;
+  padding: 20px;
+  h1 {
+    margin-bottom: 10px;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 40px;
+    color: $medium-text;
+  }
+  .time-block {
+    width: 230px;
+    height: 36px;
+    padding: 5px 0 10px 0;
+    border-top: 1px solid $light-border;
+    font-size: 14px;
+    font-weight: 100;
+    color: $light-text;
+    @include flex-center;
+    justify-content: flex-end;
+    .date {
+      margin-right: 10px;
+    }
+  }
+}

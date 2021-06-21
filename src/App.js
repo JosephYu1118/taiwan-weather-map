@@ -1,13 +1,13 @@
 import React from 'react';
 
-import Test from '@/components/Test';
+import Weather from '@/pages/Weather';
 import Loading from '@/components/Loading';
 import Toast from '@/components/Toast';
 import '@/assets/styles/base.scss';
 
 const App = () => (
   <div id="app">
-    <Test />
+    <Weather />
     <Loading />
     <Toast />
   </div>

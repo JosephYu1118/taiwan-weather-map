@@ -3,4 +3,7 @@ export const view = {
   SET_TOAST_MESSAGE: 'SET_TOAST_MESSAGE',
 };
 
-export default null;
+export const weather = {
+  FETCH_WEATHER_DATA_SUCCESS: 'FETCH_WEATHER_DATA_SUCCESS',
+  FETCH_WEATHER_DATA_FAILURE: 'FETCH_WEATHER_DATA_FAILURE',
+};
