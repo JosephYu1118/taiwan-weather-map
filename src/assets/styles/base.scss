@@ -1,0 +1,19 @@
+@import './reset.scss';
+@import './fonts.scss';
+
+html, body, #app {
+	width: 100%;
+	height: 100vh;
+	margin: 0 auto;
+	line-height: normal;
+	font-family: 'Noto Sans TC', sans-serif;
+	overflow: hidden;
+	touch-action: manipulation;
+}
+
+#app {
+	max-width: 450px;
+  background-color: grey;
+	position: relative;
+	overflow-y: scroll;
+}

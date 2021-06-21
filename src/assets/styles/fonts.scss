@@ -1,0 +1,50 @@
+// ========================================
+//      Fonts
+// ================================================================================
+// --------------------
+//      Fjalla One
+// ----------------------------------------
+@font-face {
+	src: url('@/assets/fonts/FjallaOne-Regular.ttf');
+  font-family: 'Fjalla One';
+	font-weight: normal;
+}
+
+// --------------------
+//      Noto Sans TC
+// ----------------------------------------
+@font-face {
+	src: url('@/assets/fonts/NotoSansTC-Thin.otf');
+  font-family: 'Noto Sans TC';
+	font-weight: 100;
+}
+
+@font-face {
+	src: url('@/assets/fonts/NotoSansTC-Light.otf');
+  font-family: 'Noto Sans TC';
+	font-weight: 300;
+}
+
+@font-face {
+	src: url('@/assets/fonts/NotoSansTC-Regular.otf');
+  font-family: 'Noto Sans TC';
+	font-weight: 400;
+}
+
+@font-face {
+	src: url('@/assets/fonts/NotoSansTC-Medium.otf');
+  font-family: 'Noto Sans TC';
+	font-weight: 500;
+}
+
+@font-face {
+	src: url('@/assets/fonts/NotoSansTC-Bold.otf');
+  font-family: 'Noto Sans TC';
+	font-weight: 700;
+}
+
+@font-face {
+	src: url('@/assets/fonts/NotoSansTC-Black.otf');
+  font-family: 'Noto Sans TC';
+	font-weight: 900;
+}
