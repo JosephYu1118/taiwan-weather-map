@@ -4,11 +4,11 @@
   "author": "Joseph Yu",
   "license": "MIT",
   "version": "1.0.0",
-  "main": "webpack.config.js",
   "scripts": {
     "dev": "webpack serve --config webpack.dev.js",
-    "build:dev": "webpack --env development --config webpack.prod.js",
+    "build:dev": "webpack --env development --config webpack.dev.js",
     "build:prod": "webpack --env production --config webpack.prod.js",
+    "deploy": "npm run build:prod && gh-pages -d dist",
     "lint": "eslint ."
   },
   "repository": {
@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/JosephYu1118/taiwan-weather-map/issues"
   },
-  "homepage": "https://github.com/JosephYu1118/taiwan-weather-map#readme",
+  "homepage": "https://josephyu1118.github.io/taiwan-weather-map/",
   "browserslist": [
     "last 2 versions",
     "> 0.2%",
@@ -54,6 +54,7 @@
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-webpack-plugin": "^2.5.4",
+    "gh-pages": "^3.2.2",
     "html-webpack-plugin": "^5.3.1",
     "mini-css-extract-plugin": "^1.6.0",
     "postcss": "^7.0.36",

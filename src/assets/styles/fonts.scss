@@ -5,8 +5,9 @@
 //      Fjalla One
 // ----------------------------------------
 @font-face {
-	src: url('@/assets/fonts/FjallaOne-Regular.ttf');
+	src: url('@/assets/fonts/FjallaOne-Regular.ttf') format('truetype');
   font-family: 'Fjalla One';
+	font-style: normal;
 	font-weight: normal;
 }
 
@@ -14,37 +15,43 @@
 //      Noto Sans TC
 // ----------------------------------------
 @font-face {
-	src: url('@/assets/fonts/NotoSansTC-Thin.otf');
+	src: url('@/assets/fonts/NotoSansTC-Thin.otf') format('truetype');
   font-family: 'Noto Sans TC';
+	font-style: normal;
 	font-weight: 100;
 }
 
 @font-face {
-	src: url('@/assets/fonts/NotoSansTC-Light.otf');
+	src: url('@/assets/fonts/NotoSansTC-Light.otf') format('truetype');
   font-family: 'Noto Sans TC';
+	font-style: normal;
 	font-weight: 300;
 }
 
 @font-face {
-	src: url('@/assets/fonts/NotoSansTC-Regular.otf');
+	src: url('@/assets/fonts/NotoSansTC-Regular.otf') format('truetype');
   font-family: 'Noto Sans TC';
+	font-style: normal;
 	font-weight: 400;
 }
 
 @font-face {
-	src: url('@/assets/fonts/NotoSansTC-Medium.otf');
+	src: url('@/assets/fonts/NotoSansTC-Medium.otf') format('truetype');
   font-family: 'Noto Sans TC';
+	font-style: normal;
 	font-weight: 500;
 }
 
 @font-face {
-	src: url('@/assets/fonts/NotoSansTC-Bold.otf');
+	src: url('@/assets/fonts/NotoSansTC-Bold.otf') format('truetype');
   font-family: 'Noto Sans TC';
+	font-style: normal;
 	font-weight: 700;
 }
 
 @font-face {
-	src: url('@/assets/fonts/NotoSansTC-Black.otf');
+	src: url('@/assets/fonts/NotoSansTC-Black.otf') format('truetype') ;
   font-family: 'Noto Sans TC';
+	font-style: normal;
 	font-weight: 900;
 }

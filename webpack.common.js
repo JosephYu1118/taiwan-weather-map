@@ -5,15 +5,12 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const DotenvWebpack = require('dotenv-webpack');
 const EslintWebpackPlugin = require('eslint-webpack-plugin');
 
-const publicPath = process.env.PUBLIC_PATH;
-
 module.exports = (env) => ({
   entry: path.resolve(__dirname, 'src/index.js'),
   output: {
-    publicPath,
+    publicPath: '',
     path: path.resolve(__dirname, 'dist'),
-    filename: 'static/js/[name].[fullhash].js',
-    assetModuleFilename: 'static/img/[hash][ext][query]',
+    filename: 'js/[name].[fullhash].js',
     clean: true,
   },
   resolve: {
@@ -36,6 +33,9 @@ module.exports = (env) => ({
         use: [
           env.production ? {
             loader: MiniCssExtractPlugin.loader,
+            options: {
+              publicPath: '../',
+            },
           } : 'style-loader',
           'css-loader',
           {
@@ -63,10 +63,16 @@ module.exports = (env) => ({
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
+        generator: {
+          filename: 'img/[hash][ext][query]',
+        },
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
+        generator: {
+          filename: 'fonts/[hash][ext][query]',
+        },
       },
     ],
   },
@@ -76,8 +82,8 @@ module.exports = (env) => ({
       template: path.resolve(__dirname, 'public/index.html'),
     }),
     new MiniCssExtractPlugin({
-      filename: 'static/css/[name].[contenthash].css',
-      chunkFilename: 'static/css/[id].[contenthash].css',
+      filename: 'css/[name].[contenthash].css',
+      chunkFilename: 'css/[id].[contenthash].css',
     }),
     new DotenvWebpack(),
     new EslintWebpackPlugin(),
