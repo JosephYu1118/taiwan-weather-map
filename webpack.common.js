@@ -78,14 +78,16 @@ module.exports = (env) => ({
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'React Webpack Practice',
+      title: 'Taiwan Weather Map',
       template: path.resolve(__dirname, 'public/index.html'),
     }),
     new MiniCssExtractPlugin({
       filename: 'css/[name].[contenthash].css',
       chunkFilename: 'css/[id].[contenthash].css',
     }),
-    new DotenvWebpack(),
+    new DotenvWebpack({
+      path: './.env.production',
+    }),
     new EslintWebpackPlugin(),
   ],
 });
